@@ -6,7 +6,7 @@ export const Hero = () => {
     const { t } = useTranslation();
 
     return (
-        <section id='Hero' className="p-4 sm:p-8 lg:p-32 lg:h-screen bg-[#F5F5F5] dark:bg-[#191919]" aria-labelledby="hero-heading">
+        <section id='Hero' className="p-28  lg:p-32 lg:h-screen bg-[#F5F5F5] dark:bg-[#191919]" aria-labelledby="hero-heading">
             <div className="flex flex-col lg:flex-row items-center lg:justify-around w-full h-full">
                 <div className="text-center lg:text-left mb-8 lg:mb-0" data-aos="zoom-in-right">
                     <h1 id="hero-heading" className="text-3xl sm:text-4xl lg:text-6xl text-[#42446E] dark:text-[#D9D9D9] font-bold mb-4">

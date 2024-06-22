@@ -117,8 +117,8 @@ export function Header() {
               {openNav ? (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  className="h-6 w-6"
+                  fill=""
+                  className="h-6 w-6  text-black dark:text-white "
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                   strokeWidth={2}
@@ -132,7 +132,7 @@ export function Header() {
               ) : (
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
+                  className="h-6 w-6 text-black dark:text-white"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth={2}
