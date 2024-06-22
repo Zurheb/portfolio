@@ -24,8 +24,8 @@ const projects = [
     id: 2,
     image: elixer,
     projectsname: "Elixer",
-    livePreview: "#",
-    viewCode: "#",
+    livePreview: "https://elixer-ecru.vercel.app/",
+    viewCode: "https://github.com/Zurheb/elixer",
     languages: ["React", "TailwindCss", "JavaScript"],
   },
   {
