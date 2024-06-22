@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.Behruz {
+  font-family: "Great Vibes", cursive;
+  background-image: linear-gradient(to right, #13b0f5, #e70faa);
+  -webkit-background-clip: text;
+  color: transparent;
+
+}
+.Behruz2 {
+  font-family: "Great Vibes", cursive;
+  background-image: linear-gradient(to right, #13b0f5, #e70faa);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.Zurheb {
+  background-image: linear-gradient(to right, #13b0f5, #e70faa);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+@keyframes hoverAnimation {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  to {
+    transform: scale(1.05) rotate(2deg);
+  }
+}
+
+@keyframes hoverAnimationReverse {
+  from {
+    transform: scale(1.05) rotate(2deg);
+  }
+  to {
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+.nav-item {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-image: linear-gradient(to right, #13b0f5, #e70faa);
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover::before {
+  visibility: visible;
+  width: 100%;
+  left: 0;
+}
+.link-icon-light, .github-icon-light {
+    display: none;
+}
+
+.dark .link-icon-light, .dark .github-icon-light {
+    display: inline-block;
+}
+
+.dark .link-icon-dark, .dark .github-icon-dark {
+    display: none;
+}
+
+.link-icon-dark, .github-icon-dark {
+    display: inline-block;
+}
