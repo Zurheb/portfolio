@@ -90,13 +90,7 @@ const ProjectModal = ({ project, onClose }) => {
               alt={project.projectsname}
               className="w-full h-64 object-bottom mb-4"
             />
-            <Typography className="mb-4 text-[#42446E] dark:text-[#CCCCCC]">
-              {project.id === 1
-                ? t("section2.description1")
-                : project.id === 2
-                ? t("section2.description2")
-                : t("section2.description3")}
-            </Typography>
+            
             <Typography className="mb-2 text-[#42446E] dark:text-[#CCCCCC]">
               <strong>{t("section2.StartDate")}:</strong>{" "}
               {project.id === 1
@@ -165,12 +159,12 @@ export const Section2 = () => {
 
   const handleProjectClick = (project) => {
     setSelectedProject(project);
-    document.body.style.overflow = 'hidden'; // Disable scrolling when modal is open
+    
   };
 
   const handleCloseModal = () => {
     setSelectedProject(null);
-    document.body.style.overflow = 'auto'; // Enable scrolling when modal is closed
+   
   };
 
   return (
