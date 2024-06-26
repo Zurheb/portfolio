@@ -62,7 +62,7 @@ const Contact = () => {
   const sendEmail = async (data) => {
     try {
       await emailjs.sendForm(
-        "service_vxikxvp",
+        "service_tdvuhn7",
         "template_v0n5rjz",
         form.current,
         "WWSzqOiu_w7AOY72Z"
